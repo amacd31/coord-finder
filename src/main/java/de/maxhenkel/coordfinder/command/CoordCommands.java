@@ -161,5 +161,20 @@ public class CoordCommands {
                 , false);
     }
 
+    @RequiresPermission("coordfinder.help")
+    @Command("help")
+    public void help(CommandContext<CommandSourceStack> context) {
+
+        context.getSource().sendSuccess(() -> Component.literal("Coord Finder commands: \n")
+                        .append("`/coords player <playername>` shows the location of the specified player.\n")
+                        .append("`/coords setplace <placename> [<x y z>] [<dimension>]` sets the coordinates of the place with the specified name.\n")
+                        .append("`/coords removeplace <placename>` removes the place with the specified name.\n")
+                        .append("`/coords listplaces` lists all places.\n")
+                        .append("`/coords place <placename>` shows the coordinates of the provided place.\n")
+                        .append("`/coords hide` prevents others from getting your location until the next server restart.\n")
+                        .append("`/coords unhide` unhides your location.\n")
+                        .append("`/coords help` Prints this help.\n")
+                , false);
+    }
 
 }

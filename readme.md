@@ -6,7 +6,7 @@ A serverside Fabric mod to share player and place coordinates on your server.
 
 `/coords player <playername>` shows the location of the specified player.
 
-`/coords setplace <placename> [<x, y, z>] [<dimension>]` sets the coordinates of the place with the specified name.
+`/coords setplace <placename> [<x y z>] [<dimension>]` sets the coordinates of the place with the specified name.
 
 `/coords removeplace <placename>` removes the place with the specified name.
 
@@ -18,3 +18,4 @@ A serverside Fabric mod to share player and place coordinates on your server.
 
 `/coords unhide` unhides your location.
 
+`/coords help` Prints help listing commands and their options.

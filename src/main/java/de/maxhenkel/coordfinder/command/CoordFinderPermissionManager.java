@@ -19,12 +19,14 @@ public class CoordFinderPermissionManager implements PermissionManager<CommandSo
     private static final Permission MODIFY_PLACES = new Permission("coordfinder.modifyplaces", PermissionType.EVERYONE);
     private static final Permission GET_PLACES = new Permission("coordfinder.getplaces", PermissionType.EVERYONE);
     private static final Permission HIDE = new Permission("coordfinder.hide", PermissionType.EVERYONE);
+    private static final Permission HELP = new Permission("coordfinder.help", PermissionType.EVERYONE);
 
     private static final List<Permission> PERMISSIONS = List.of(
             PLAYER_LOCATION,
             MODIFY_PLACES,
             GET_PLACES,
-            HIDE
+            HIDE,
+            HELP
     );
 
     @Override
